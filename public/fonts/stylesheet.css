@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Accidental Presidency';
+    src: url('AccidentalPresidency.woff2') format('woff2'),
+        url('AccidentalPresidency.woff') format('woff'),
+        url('AccidentalPresidency.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ArmWrestler';
+    src: url('ArmWrestler-Bold.woff2') format('woff2'),
+        url('ArmWrestler-Bold.woff') format('woff'),
+        url('ArmWrestler-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'OldTypefaces';
+    src: url('OldTypefaces.woff2') format('woff2'),
+        url('OldTypefaces.woff') format('woff'),
+        url('OldTypefaces.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Underwood Champion';
+    src: url('UnderwoodChampion.woff2') format('woff2'),
+        url('UnderwoodChampion.woff') format('woff'),
+        url('UnderwoodChampion.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

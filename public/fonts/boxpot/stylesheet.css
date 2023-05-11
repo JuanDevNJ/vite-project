@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Boxpot";
+  src: url("Boxpot-Ametuer.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Boxpot";
+  src: local("Boxpot Ametuer"), local("Boxpot-Ametuer"),format("woff"),
+    url("SpotlightTypewriterNC.ttf") format("truetype"),
+    url("SpotlightTypewriterNC.svg#SpotlightTypewriterNC") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}

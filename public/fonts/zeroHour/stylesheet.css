@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Zero Hour';
+    src: url('ZeroHour-Regular.woff2') format('woff2'),
+        url('ZeroHour-Regular.woff') format('woff'),
+        url('ZeroHour-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

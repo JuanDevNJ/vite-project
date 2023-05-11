@@ -1,0 +1,72 @@
+*,*:before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Boxpot";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+@font-face {
+  font-family: "Boxpot";
+  src: url("Boxpot-Ametuer.eot");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Boxpot";
+  src: local("www"), local("Boxpot-Ametuer"),format("woff"),
+    url("SpotlightTypewriterNC.ttf") format("truetype"),
+    url("SpotlightTypewriterNC.svg#SpotlightTypewriterNC") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  color: red;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+
+  display: grid;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
