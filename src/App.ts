@@ -1,4 +1,5 @@
-export default class BienvenidaNJV extends HTMLElement {
+export default class App extends HTMLElement {
+  id: string = "app"
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
@@ -10,29 +11,28 @@ export default class BienvenidaNJV extends HTMLElement {
     return /* CSS */ `
       :host{
         display: block;
+       
       }
       h1{
-        color: snow;
+        color: red;
       }
     `
   }
   ready() {
     this.shadowRoot!.innerHTML = /*html*/ `
-        <style>${BienvenidaNJV.styles}</style>
-        <h1>Bienvenid@ ${this.getAttribute("name-user") ?? 'Bienvenid@'}</h1>
+        <style>${App.styles}</style>
+     
       `
   }
   disconnectedCallback() {
     this.shadowRoot!.innerHTML = /* html */ "";
   }
 
-  attributeChangedCallback(attr:any, old:any, now:any) { 
-    console.log(attr, old, now);
-  }
+  attributeChangedCallback(attr:any, old:any, now:any) { }
 
 
   static get observedAttributes() {
-    return ['name-user', "is-enabled"];
+    return [''];
   }
 }
-window.customElements.define("bienvenida-njv",BienvenidaNJV);
+window.customElements.define("app-njs",App);

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Zero Hour';
+    src: url('ZeroHour-Regular.woff2') format('woff2'),
+        url('ZeroHour-Regular.woff') format('woff'),
+        url('ZeroHour-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Xirod';
+    src: url('Xirod-Regular.woff2') format('woff2'),
+        url('Xirod-Regular.woff') format('woff'),
+        url('Xirod-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Transformers Movie';
+    src: url('TransformersMovie.woff2') format('woff2'),
+        url('TransformersMovie.woff') format('woff'),
+        url('TransformersMovie.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Infinium Guardian';
+    src: url('InfiniumGuardian.woff2') format('woff2'),
+        url('InfiniumGuardian.woff') format('woff'),
+        url('InfiniumGuardian.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Duplexide';
+    src: url('Duplexide.woff2') format('woff2'),
+        url('Duplexide.woff') format('woff'),
+        url('Duplexide.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: '`DragonForcE\'';
+    src: url('DragonForcE.woff2') format('woff2'),
+        url('DragonForcE.woff') format('woff'),
+        url('DragonForcE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

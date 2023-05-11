@@ -1,9 +1,11 @@
-export default class BienvenidaNJV extends HTMLElement {
+export default class Contador extends HTMLElement {
+ 
   constructor() {
     super()
     this.attachShadow({ mode: 'open' })
   }
   connectedCallback() {
+   
     this.ready()
   }
   static get styles() {
@@ -11,28 +13,31 @@ export default class BienvenidaNJV extends HTMLElement {
       :host{
         display: block;
       }
-      h1{
-        color: snow;
-      }
     `
   }
   ready() {
+   
     this.shadowRoot!.innerHTML = /*html*/ `
-        <style>${BienvenidaNJV.styles}</style>
-        <h1>Bienvenid@ ${this.getAttribute("name-user") ?? 'Bienvenid@'}</h1>
+        <style>${Contador.styles}</style>
+        <h1>Contador ${this.getAttribute("count")}</h1>
       `
   }
+ 
+
   disconnectedCallback() {
     this.shadowRoot!.innerHTML = /* html */ "";
   }
 
   attributeChangedCallback(attr:any, old:any, now:any) { 
-    console.log(attr, old, now);
+    if (typeof attr !== "string"){
+      throw new Error("Los atributos de los componetes tienen que ser de tipo cadena (string)"); 
+    }
+    console.log("Changed attribute:", attr, now);
   }
 
 
   static get observedAttributes() {
-    return ['name-user', "is-enabled"];
+    return ['count'];
   }
 }
-window.customElements.define("bienvenida-njv",BienvenidaNJV);
+window.customElements.define("contador-njv",Contador);

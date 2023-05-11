@@ -1,8 +1,12 @@
 const $ = (tag: string) => document.querySelector<HTMLDivElement>(tag)!
 
 const animacion = (nombre: string, opciones: {}): boolean => {
-  if (typeof nombre === 'string' && nombre && typeof opciones === 'object' || Object.keys(opciones).length) {
+  if (nombre && typeof nombre === 'string' &&  typeof opciones === 'object' || Object.keys(opciones).length) {
     return true
+    const anim : {nombre: string, opciones: {}}= {
+      nombre,
+      opciones
+    }
   } else {
     return false
   }
